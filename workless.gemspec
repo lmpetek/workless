@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["lmpetek"]
   s.date = %q{2017-06-30}
   s.description = %q{Extension to Delayed Job to enable workers to scale up when needed}
-  s.email = %q{paul.crabtree@gmail.com}
+  s.email = %q{lmpetek@gmail.com}
 
   s.files = Dir.glob("{rails,lib}/**/*") + %w(LICENSE README.md )
 
