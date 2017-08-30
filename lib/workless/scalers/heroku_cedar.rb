@@ -1,4 +1,4 @@
-require 'heroku-api'
+#require 'heroku-api'
 
 module Delayed
   module Workless
