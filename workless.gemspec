@@ -24,8 +24,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency(%q<rush>)
   s.add_runtime_dependency(%q<delayed_job>, [">= 2.0.7"])
 
-  s.required_ruby_version = '= 1.9.3'
+  #s.required_ruby_version = '= 1.9.3'
 
   s.add_development_dependency(%q<rspec>)
 end
-

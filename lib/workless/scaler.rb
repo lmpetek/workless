@@ -1,10 +1,9 @@
 module Delayed
   module Workless
     module Scaler
-
       autoload :Heroku, 'workless/scalers/heroku'
       autoload :Local,  'workless/scalers/local'
-      autoload :Null,    'workless/scalers/null'
+      autoload :Null,   'workless/scalers/null'
 
       def self.included(base)
         base.send :extend, ClassMethods
