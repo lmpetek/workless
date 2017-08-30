@@ -8,13 +8,13 @@ module Delayed
 
         def self.up
           return unless workers_needed > min_workers && workers < workers_needed
-          updates = { "quantity": workers_needed }
+          updates = { :quantity => workers_needed }
           client.formation.update(ENV['APP_NAME'], 'worker', updates)
         end
 
         def self.down
           return if workers == workers_needed
-          updates = { "quantity": workers_needed }
+          updates = { :quantity => workers_needed }
           client.formation.update(ENV['APP_NAME'], 'worker', updates)
         end
 
